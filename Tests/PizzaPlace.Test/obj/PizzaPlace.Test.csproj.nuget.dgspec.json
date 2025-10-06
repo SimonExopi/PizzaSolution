@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj": {}
+    "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
+    "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+        "projectUniqueName": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
         "projectName": "PizzaPlace",
-        "projectPath": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
-        "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\PizzaPlace\\obj\\",
+        "projectPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+        "packagesPath": "C:\\Users\\Simon Andreasen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Simon Andreasen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +39,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -73,21 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj": {
+    "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
+        "projectUniqueName": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
         "projectName": "PizzaPlace.Test",
-        "projectPath": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
-        "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\Tests\\PizzaPlace.Test\\obj\\",
+        "projectPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
+        "packagesPath": "C:\\Users\\Simon Andreasen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\Tests\\PizzaPlace.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Simon Andreasen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +102,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
-                "projectPath": "C:\\Users\\jonat\\Documents\\Pizza\\PizzaSolutionV1\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj"
+              "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
+                "projectPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj"
               }
             }
           }
@@ -116,7 +117,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -163,7 +165,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
