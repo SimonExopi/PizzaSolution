@@ -48,9 +48,9 @@ public class MenuService : IMenuService
     );
     }
 
-    public Menu GetMenu(DateTime utcNow)
+    public Menu GetMenu(DateTime utcNowOffset)
     {
-        var hour = utcNow.Hour;
+        var hour = utcNowOffset.Hour;
         if (hour >= 11 && hour < 15)
             {
             return _lunchMenu;
@@ -61,6 +61,6 @@ public class MenuService : IMenuService
 
     public Menu GetMenu(DateTimeOffset menuDate)
     {
-        throw new NotImplementedException("No menu has been implemented yet.");
+        return GetMenu(menuDate.UtcDateTime);
     }
 }

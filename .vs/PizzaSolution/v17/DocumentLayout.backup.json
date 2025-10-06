@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\simon andreasen\\source\\repos\\pizzasolution\\pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\simon andreasen\\source\\repos\\pizzasolution\\pizzaplace\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +14,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "PizzaPlace\\Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "PizzaPlace\\Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABJAAAAAAAAAA==",
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "PizzaPlace\\Services\\MenuService.cs",
+              "ToolTip": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Services\\MenuService.cs",
+              "RelativeToolTip": "PizzaPlace\\Services\\MenuService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwD8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T11:48:27.265Z",
+              "WhenOpened": "2025-10-06T11:51:58.907Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         }
