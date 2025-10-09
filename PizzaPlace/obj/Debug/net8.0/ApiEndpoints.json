@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "PizzaPlace.Controllers.MenuController",
+    "Method": "GetMenu",
+    "RelativePath": "api/menu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PizzaPlace.Controllers.OrderingController",
+    "Method": "PlacePizzaOrder",
+    "RelativePath": "api/order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pizzaOrder",
+        "Type": "PizzaPlace.Models.PizzaOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PizzaPlace.Controllers.RestockingController",
+    "Method": "Restock",
+    "RelativePath": "api/restocking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stock",
+        "Type": "PizzaPlace.ComparableList\u00601[[PizzaPlace.Models.StockDto, PizzaPlace, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PizzaPlace.Controllers.WelcomeController",
+    "Method": "Greet",
+    "RelativePath": "api/welcome",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

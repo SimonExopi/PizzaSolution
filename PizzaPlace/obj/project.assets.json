@@ -3022,19 +3022,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Simon Andreasen\\.nuget\\packages\\": {}
+    "C:\\Users\\Steen Pedersen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+      "projectUniqueName": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
       "projectName": "PizzaPlace",
-      "projectPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
-      "packagesPath": "C:\\Users\\Simon Andreasen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Simon Andreasen\\Source\\Repos\\PizzaSolution\\PizzaPlace\\obj\\",
+      "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+      "packagesPath": "C:\\Users\\Steen Pedersen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Simon Andreasen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Steen Pedersen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

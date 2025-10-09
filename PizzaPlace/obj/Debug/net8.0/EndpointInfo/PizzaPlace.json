@@ -1,0 +1,242 @@
+{
+  "x-generator": "NSwag v14.0.7.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Pizza Place",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/menu": {
+      "get": {
+        "tags": [
+          "Menu"
+        ],
+        "operationId": "Menu_GetMenu",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/order": {
+      "post": {
+        "tags": [
+          "Ordering"
+        ],
+        "operationId": "Ordering_PlacePizzaOrder",
+        "requestBody": {
+          "x-name": "pizzaOrder",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PizzaOrder"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/restocking": {
+      "post": {
+        "tags": [
+          "Restocking"
+        ],
+        "operationId": "Restocking_Restock",
+        "requestBody": {
+          "x-name": "stock",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StockDto"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/welcome": {
+      "get": {
+        "tags": [
+          "Welcome"
+        ],
+        "operationId": "Welcome_Greet",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PizzaOrder": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "requestedOrder": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PizzaAmount"
+            }
+          }
+        }
+      },
+      "PizzaAmount": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "pizzaType": {
+            "$ref": "#/components/schemas/PizzaRecipeType"
+          },
+          "amount": {
+            "type": "integer"
+          }
+        }
+      },
+      "PizzaRecipeType": {
+        "type": "string",
+        "description": "",
+        "x-enumNames": [
+          "StandardPizza",
+          "ExtremelyTastyPizza",
+          "OddPizza",
+          "RarePizza",
+          "HorseRadishPizza",
+          "EmptyPizza"
+        ],
+        "enum": [
+          "StandardPizza",
+          "ExtremelyTastyPizza",
+          "OddPizza",
+          "RarePizza",
+          "HorseRadishPizza",
+          "EmptyPizza"
+        ]
+      },
+      "StockDto": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Dto"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "stockType": {
+                "$ref": "#/components/schemas/StockType"
+              },
+              "amount": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        ]
+      },
+      "StockType": {
+        "type": "string",
+        "description": "",
+        "x-enumNames": [
+          "Dough",
+          "FermentedDough",
+          "Tomatoes",
+          "RottenTomatoes",
+          "UnicornDust",
+          "Anchovies",
+          "BellPeppers",
+          "GratedCheese",
+          "UngratedCheese",
+          "GenericSpices",
+          "UngenericSpices",
+          "Sulphur",
+          "Bacon",
+          "DoubleBacon",
+          "TrippleBacon",
+          "RayOfSunshine",
+          "Chocolate"
+        ],
+        "enum": [
+          "Dough",
+          "FermentedDough",
+          "Tomatoes",
+          "RottenTomatoes",
+          "UnicornDust",
+          "Anchovies",
+          "BellPeppers",
+          "GratedCheese",
+          "UngratedCheese",
+          "GenericSpices",
+          "UngenericSpices",
+          "Sulphur",
+          "Bacon",
+          "DoubleBacon",
+          "TrippleBacon",
+          "RayOfSunshine",
+          "Chocolate"
+        ]
+      },
+      "Dto": {
+        "type": "object",
+        "x-abstract": true,
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      }
+    }
+  }
+}
