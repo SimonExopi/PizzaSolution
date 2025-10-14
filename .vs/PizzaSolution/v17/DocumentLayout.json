@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\",
+  "WorkspaceRootPath": "C:\\Users\\Steen Pedersen\\Documents\\pizzasolution_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\simon andreasen\\source\\repos\\pizzasolution\\pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\steen pedersen\\documents\\pizzasolution_4\\pizzaplace\\controllers\\welcomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\controllers\\welcomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\steen pedersen\\documents\\pizzasolution_4\\pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +23,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WelcomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Steen Pedersen\\Documents\\pizzasolution_4\\PizzaPlace\\Controllers\\WelcomeController.cs",
+              "RelativeDocumentMoniker": "PizzaPlace\\Controllers\\WelcomeController.cs",
+              "ToolTip": "C:\\Users\\Steen Pedersen\\Documents\\pizzasolution_4\\PizzaPlace\\Controllers\\WelcomeController.cs",
+              "RelativeToolTip": "PizzaPlace\\Controllers\\WelcomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:37:58.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\Steen Pedersen\\Documents\\pizzasolution_4\\PizzaPlace\\Controllers\\MenuController.cs",
               "RelativeDocumentMoniker": "PizzaPlace\\Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\Steen Pedersen\\Documents\\pizzasolution_4\\PizzaPlace\\Controllers\\MenuController.cs",
               "RelativeToolTip": "PizzaPlace\\Controllers\\MenuController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T11:48:27.265Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
             }
           ]
         }
