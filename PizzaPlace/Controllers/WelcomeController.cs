@@ -10,6 +10,6 @@ public class WelcomeController : ControllerBase
     {
         Console.WriteLine("Is Pizza yummy?.");
 
-        return Ok("Pizza yummy 🍕👌.");
+        return Ok("Super Pizza yummy 🍕👌.");
     }
 }

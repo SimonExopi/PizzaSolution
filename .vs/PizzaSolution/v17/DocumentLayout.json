@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\",
+  "WorkspaceRootPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\simon andreasen\\source\\repos\\pizzasolution\\pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\steen pedersen\\documents\\github\\pizzasolution\\pizzasolution\\pizzaplace\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\steen pedersen\\documents\\github\\pizzasolution\\pizzasolution\\pizzaplace\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\steen pedersen\\documents\\github\\pizzasolution\\pizzasolution\\pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|c:\\users\\steen pedersen\\documents\\github\\pizzasolution\\pizzasolution\\pizzaplace\\controllers\\welcomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80921530-BBF5-42E9-8916-FE1848CF3EFE}|PizzaPlace\\PizzaPlace.csproj|solutionrelative:pizzaplace\\controllers\\welcomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "PizzaPlace\\Controllers\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Simon Andreasen\\source\\repos\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "PizzaPlace\\Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABJAAAAAAAAAA==",
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "PizzaPlace\\Models\\MenuItem.cs",
+              "ToolTip": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Models\\MenuItem.cs",
+              "RelativeToolTip": "PizzaPlace\\Models\\MenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T11:48:27.265Z",
+              "WhenOpened": "2025-10-10T09:43:15.694Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "PizzaPlace\\Services\\MenuService.cs",
+              "ToolTip": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Services\\MenuService.cs",
+              "RelativeToolTip": "PizzaPlace\\Services\\MenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T12:05:11.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WelcomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Controllers\\WelcomeController.cs",
+              "RelativeDocumentMoniker": "PizzaPlace\\Controllers\\WelcomeController.cs",
+              "ToolTip": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Controllers\\WelcomeController.cs",
+              "RelativeToolTip": "PizzaPlace\\Controllers\\WelcomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T09:10:32.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "PizzaPlace\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "PizzaPlace\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T11:48:27.265Z"
             }
           ]
         }
