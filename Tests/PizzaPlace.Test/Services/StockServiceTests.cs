@@ -1,4 +1,5 @@
-﻿using PizzaPlace.Models;
+﻿using Moq;
+using PizzaPlace.Models;
 using PizzaPlace.Models.Types;
 using PizzaPlace.Repositories;
 using PizzaPlace.Services;
@@ -26,11 +27,11 @@ public class StockServiceTests
         var stockRepository = new Mock<IStockRepository>(MockBehavior.Strict);
         stockRepository
             .Setup(repo => repo.GetStock(It.IsAny<StockType>()))
-            .ReturnsAsync((StockType type) => expectedStock.FirstOrDefault(s => s.StockType == type));
+            .ReturnsAsync((StockType type) => expectedStock.FirstOrDefault(s => s.StockType == type) ?? new StockDto(type, 0));
 
         var stockService = GetService(stockRepository);
 
-        // Dummy order and recipes (minimal, just to satisfy the method signature)
+        // Dummy order and recipes
         var dummyOrder = new PizzaOrder(new ComparableList<PizzaAmount>());
         var dummyRecipes = new ComparableList<PizzaRecipeDto>();
 
@@ -38,6 +39,7 @@ public class StockServiceTests
         var actualStock = await stockService.GetStock(dummyOrder, dummyRecipes);
 
         // Assert
+        Assert.IsNotNull(actualStock, "GetStock should not return null");
         Assert.IsTrue(expectedStock.Equals(actualStock));
     }
 }

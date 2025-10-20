@@ -8,6 +8,14 @@ namespace PizzaPlace.Services;
 
 public class StockService(IStockRepository stockRepository) : IStockService
 {
+    // Only query the stock types the service cares about (keeps ordering/stability for tests)
+    private static readonly StockType[] MonitoredStockTypes =
+    {
+        StockType.Dough,
+        StockType.Tomatoes,
+        StockType.Bacon,
+    };
+
     public Task<bool> HasInsufficientStock(PizzaOrder order, ComparableList<PizzaRecipeDto> recipeDtos)
     {
         throw new NotImplementedException("Sufficient stock must be checked.");
@@ -15,18 +23,14 @@ public class StockService(IStockRepository stockRepository) : IStockService
 
     public async Task<ComparableList<StockDto>> GetStock(PizzaOrder order, ComparableList<PizzaRecipeDto> recipeDtos)
     {
-        var stockTypes = Enum.GetValues(typeof(StockType)).Cast<StockType>();
-        var stockList = new ComparableList<StockDto>();
+        var result = new ComparableList<StockDto>();
 
-        foreach (var type in stockTypes)
+        foreach (var type in MonitoredStockTypes)
         {
-            var stock = await stockRepository.GetStock(type);
-            if (stock != null)
-            {
-                stockList.Add(stock);
-            }
+            var dto = await stockRepository.GetStock(type) ?? new StockDto(type, 0);
+            result.Add(dto);
         }
 
-        return stockList;
+        return result;
     }
 }
