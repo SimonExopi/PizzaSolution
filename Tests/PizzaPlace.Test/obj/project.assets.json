@@ -4199,11 +4199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
       "projectName": "PizzaPlace.Test",
-      "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
+      "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
       "packagesPath": "C:\\Users\\Steen Pedersen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\Tests\\PizzaPlace.Test\\obj\\",
+      "outputPath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\Tests\\PizzaPlace.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4224,8 +4224,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
-              "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj"
+            "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
+              "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj"
             }
           }
         }

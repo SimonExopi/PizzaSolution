@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUycWbl6JLM=",
+  "dgSpecHash": "A/odCdXLZEY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
+  "projectFilePath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\Tests\\PizzaPlace.Test\\PizzaPlace.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Steen Pedersen\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Steen Pedersen\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

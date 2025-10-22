@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y7dkRBKQZnY=",
+  "dgSpecHash": "w+B0VkPltaU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+  "projectFilePath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Steen Pedersen\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Steen Pedersen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.3\\microsoft.extensions.apidescription.server.6.0.3.nupkg.sha512",

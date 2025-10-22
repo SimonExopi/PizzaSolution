@@ -8,8 +8,8 @@ public class WelcomeController : ControllerBase
     [HttpGet]
     public IActionResult Greet()
     {
-        Console.WriteLine("Velkommen bash");
+        Console.WriteLine("Velkommen bash bash bash");
 
-        return Ok("Automatede pizza bestilling bash");
+        return Ok("Automatede pizza bestilling bash bash bash");
     }
 }

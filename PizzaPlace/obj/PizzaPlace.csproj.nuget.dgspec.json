@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {}
+    "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
+    "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+        "projectUniqueName": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
         "projectName": "PizzaPlace",
-        "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
+        "projectPath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\PizzaPlace.csproj",
         "packagesPath": "C:\\Users\\Steen Pedersen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steen Pedersen\\Documents\\GitHub\\pizzasolution\\PizzaSolution\\PizzaPlace\\obj\\",
+        "outputPath": "C:\\Users\\Steen Pedersen\\Documents\\pizzaopgave\\PizzaSolution\\PizzaPlace\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
