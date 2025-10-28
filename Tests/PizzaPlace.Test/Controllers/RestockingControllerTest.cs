@@ -41,7 +41,7 @@ namespace PizzaPlace.Test.Controllers
             // Act / Assert
             // Note: the controller method is currently not implemented and throws NotImplementedException.
             // This test prepares the request body and a dummy repository response to demonstrate the intended interaction.
-            await Assert.ThrowsExceptionAsync<NotImplementedException>(async () =>
+            await Assert.ThrowsAsync<NotImplementedException>(async () =>
             {
                 await controller.Restock(payload);
             });

@@ -52,7 +52,7 @@ public class StockRepositoryTests
         var repository = GetStockRepository();
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => repository.AddToStock(stock));
+        var ex = await Assert.ThrowsAsync<PizzaException>(() => repository.AddToStock(stock));
 
         // Assert
         Assert.AreEqual("Stock cannot have negative amount.", ex.Message);
@@ -110,7 +110,7 @@ public class StockRepositoryTests
 
     [DataRow(0)]
     [DataRow(-3)]
-    [DataTestMethod]
+    [TestMethod]
     public async Task TakeStock_NegativeAmount(int amount)
     {
         // Arrange
@@ -119,7 +119,7 @@ public class StockRepositoryTests
         await repository.AddToStock(new StockDto(stockType, 5)); // Ensure stock is present.
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => repository.TakeStock(stockType, amount));
+        var ex = await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => repository.TakeStock(stockType, amount));
 
         // Assert
         Assert.AreEqual("Unable to take zero or negative amount. (Parameter 'amount')", ex.Message);
@@ -136,7 +136,7 @@ public class StockRepositoryTests
         var amount = startStock.Amount + 1;
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => repository.TakeStock(stockType, amount));
+        var ex = await Assert.ThrowsAsync<PizzaException>(() => repository.TakeStock(stockType, amount));
 
         // Assert
         Assert.AreEqual("Not enough stock to take the given amount.", ex.Message);

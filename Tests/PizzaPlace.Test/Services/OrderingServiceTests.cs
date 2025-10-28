@@ -100,7 +100,7 @@ public class OrderingServiceTests
         var service = GetService(stockService.Object, recipeService.Object, pizzaOven.Object);
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => service.HandlePizzaOrder(order));
+        var ex = await Assert.ThrowsAsync<PizzaException>(async () => await service.HandlePizzaOrder(order));
 
         // Assert
         Assert.AreEqual("Unable to take in order. Insufficient stock.", ex.Message);
@@ -135,7 +135,7 @@ public class OrderingServiceTests
         var service = GetService(stockService.Object, recipeService.Object, pizzaOven.Object);
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => service.HandlePizzaOrder(order));
+        var ex = await Assert.ThrowsAsync<PizzaException>(async () => await service.HandlePizzaOrder(order));
 
         // Assert
         Assert.AreEqual("Missing recipe. Recipe service did not return a recipe for StandardPizza which was expected.", ex.Message);

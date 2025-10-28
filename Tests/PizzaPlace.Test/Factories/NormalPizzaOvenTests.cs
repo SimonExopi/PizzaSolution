@@ -116,7 +116,7 @@ public class NormalPizzaOvenTests
         var oven = GetOven(timeProvider);
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => oven.PreparePizzas(order, stock));
+        var ex = await Assert.ThrowsAsync<PizzaException>(() => oven.PreparePizzas(order, stock));
 
         // Assert
         Assert.AreEqual("Not enough ingredients to create all pizzas.", ex.Message);

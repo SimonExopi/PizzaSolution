@@ -45,7 +45,7 @@ public class RecipeRepositoryTests
         var repository = GetRecipeRepository();
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => repository.AddRecipe(recipe));
+        var ex = await Assert.ThrowsAsync<PizzaException>(() => repository.AddRecipe(recipe));
 
         // Assert
         Assert.AreEqual("Recipe already added for StandardPizza.", ex.Message);
@@ -75,7 +75,7 @@ public class RecipeRepositoryTests
         var repository = GetRecipeRepository();
 
         // Act
-        var ex = await Assert.ThrowsExceptionAsync<PizzaException>(() => repository.GetRecipe(pizzaType));
+        var ex = await Assert.ThrowsAsync<PizzaException>(() => repository.GetRecipe(pizzaType));
 
         // Assert
         Assert.AreEqual("Recipe does not exists of type ExtremelyTastyPizza.", ex.Message);

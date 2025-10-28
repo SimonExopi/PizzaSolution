@@ -52,4 +52,23 @@ public class FakeRecipeRepository : FakeDatabase<PizzaRecipeDto>, IRecipeReposit
             ], 10),
         ];
     }
+
+    public Task UpdateRecipe(PizzaRecipeDto recipe)
+    {
+        lock (_lock)
+        {
+            if (recipe.Id <= 0)
+                throw new PizzaException("Recipe must have a valid id to be updated.");
+
+            // Ensure no other recipe uses the same RecipeType
+            var existing = Get(x => x.RecipeType == recipe.RecipeType && x.Id != recipe.Id);
+            if (existing.Any())
+                throw new PizzaException($"Another recipe already exists for {recipe.RecipeType}.");
+
+            // Will throw PizzaException if id does not exist (per FakeDatabase.Update)
+            Update(recipe, recipe.Id);
+
+            return Task.CompletedTask;
+        }
+    }
 }
