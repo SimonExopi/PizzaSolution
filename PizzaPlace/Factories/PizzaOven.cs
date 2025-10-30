@@ -11,6 +11,8 @@ public abstract class PizzaOven(TimeProvider timeProvider) : IPizzaOven
     protected readonly ConcurrentQueue<(Func<Task<Pizza?>>, Guid)> _pizzaQueue = new();
     private readonly Dictionary<Guid, Task<(Pizza?, Guid)>> _pizzasInOven = [];
     private readonly object _ovenLock = new();
+    private readonly ConcurrentQueue<(Pizza?, Guid)> _readyPizzas = new();
+    private readonly SemaphoreSlim _readySignal = new(0);
 
     public async Task<IEnumerable<Pizza>> PreparePizzas(ComparableList<PizzaPrepareOrder> order, ComparableList<StockDto> stock)
     {
@@ -69,11 +71,18 @@ public abstract class PizzaOven(TimeProvider timeProvider) : IPizzaOven
         }
     }
 
+    //Change: Removed Task.WHenAny as if no pizza tasks are added or a wrapped task never completes the overall task will stall.
     private async Task<(Pizza?, Guid)> GetNextReadyPizza()
     {
+        // make sure we have queued tasks.
         AddPizzaTasks();
-        var donePizza = await Task.WhenAny(_pizzasInOven.Values);
-        return await donePizza;
+
+        // wait until a pizza finished (signalled by continuation)
+        await _readySignal.WaitAsync();
+
+        // dequeue the finished pizza (should succeed because signal was released)
+        _readyPizzas.TryDequeue(out var result);
+        return result;
     }
 
     private void AddPizzaTasks()
