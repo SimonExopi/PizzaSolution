@@ -11,7 +11,7 @@ public class AssemblyLinePizzaOvenTests
     private static AssemblyLinePizzaOven GetOven(TimeProvider timeProvider) => new(timeProvider);
 
     [TestMethod]
-    public async Task PreparePizzas_OnePizza()
+    public async Task PreparePizzas_CapacityOne_SequentialDifferentTypes()
     {
         // Arrange
         var timeProvider = new FakeTimeProvider();
@@ -23,7 +23,7 @@ public class AssemblyLinePizzaOvenTests
 
         var oven = GetOven(timeProvider);
         var expectedTime = NormalPizzaOvenTests.StandardPizzaPrepareTime + AssemblyLinePizzaOven.SetupTimeMinutes;
-        var expectedPizzas = 1;
+        var expectedPizzas = 23;
 
         // Act
         var pizzasTask = oven.PreparePizzas(order, stock);
@@ -41,6 +41,8 @@ public class AssemblyLinePizzaOvenTests
     }
 
     [TestMethod]
+    //TTD based test for preparing 23 of the same type of pizza. The first pizza takes the full setup and cooking time.
+    //While following pizzas only takes the cooking time.Down to minimum 4 minutes
     public async Task PreparePizzas_23_OfTheSameTypePizza()
     {
         // Arrange
@@ -52,6 +54,7 @@ public class AssemblyLinePizzaOvenTests
         var stock = NormalPizzaOvenTests.GetPlentyStock();
 
         var oven = GetOven(timeProvider);
+        //Logic behind expected time calculation:
         // NormalPizzaOvenTests.TastyPizzaPrepareTime + AssemblyLinePizzaOven.SetupTimeMinutes = 22
         // AssemblyLinePizzaOven.SubsequentPizzaTimeSavingsInMinutes = 5
         // AssemblyLinePizzaOven.MinimumCookingTimeMinutes = 4
@@ -60,6 +63,7 @@ public class AssemblyLinePizzaOvenTests
              4, 4, 4, 4, 4,
              4, 4, 4, 4, 4,
              4, 4, 4}.Sum();
+        //Update to not use magic number. Later implement a formula for expected pizzas based on order.
         var expectedPizzas = 23;
 
         // Act
@@ -74,7 +78,7 @@ public class AssemblyLinePizzaOvenTests
         Assert.IsTrue(secondCheck);
         var pizzas = await pizzasTask;
         Assert.AreEqual(expectedPizzas, pizzas.Count());
-        Assert.IsTrue(pizzas.All(x => x is ExtremelyTastyPizza), "Only tasty pizzas");
+        Assert.IsTrue(pizzas.All(x => x is ExtremelyTastyPizza), "Only ExtremelyTastyPizzas");
     }
 
     [TestMethod]

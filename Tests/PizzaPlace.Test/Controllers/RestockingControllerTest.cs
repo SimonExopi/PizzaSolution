@@ -40,15 +40,14 @@ namespace PizzaPlace.Test.Controllers
 
             // Act / Assert
             // Note: the controller method is currently not implemented and throws NotImplementedException.
-            // This test prepares the request body and a dummy repository response to demonstrate the intended interaction.
+            // Uses a dummy response to illustrate what would happen upon succesful implementation.
             await Assert.ThrowsAsync<NotImplementedException>(async () =>
             {
                 await controller.Restock(payload);
             });
 
-            // The mock setup shows the expected call; since the controller is not implemented the call will not occur.
-            // If/when Restock is implemented to call AddToStock for each incoming item, the following verification can be enabled:
-            // mockRepo.Verify(r => r.AddToStock(It.IsAny<StockDto>()), Times.Exactly(payload.Count));
+            // When Restocking is fully implemented, AddToStock is used for each incoming item. A mock verification is momentarily used.
+            mockRepo.Verify(r => r.AddToStock(It.IsAny<StockDto>()), Times.Exactly(payload.Count));
         }
     }
 }
